@@ -1,0 +1,73 @@
+{
+  "name": "nats_debug_chart_1",
+  "version": "0.1.0",
+  "main": "electron/main.js",
+  "private": true,
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "lint": "vue-cli-service lint",
+    "dev": "vite",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "nats_debug_chart_1",
+    "productName": "nats_debug_chart_1",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "dist/electron/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "author": "Goldish",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "agora-rtm-sdk": "^1.5.1",
+    "chart.js": "^4.4.2",
+    "nats.ws": "^1.17.0",
+    "ol": "^7.4.0",
+    "pinia": "2.1.4",
+    "register-service-worker": "^1.7.2",
+    "roboto-fontface": "*",
+    "three": "^0.155.0",
+    "vue": "^3.2.47",
+    "vue-chartjs": "^5.3.1",
+    "vue-router": "4.2.2",
+    "vuetify": "^3.3.6",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/webfontloader": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "prettier": "^2.4.1",
+    "typescript": "~4.5.5",
+    "vite": "^3.0.8",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  }
+}
